@@ -1,16 +1,25 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header>
       <nav className="grey darken-4">
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Food shop</a>
+          <Link to="/" className="brand-logo">
+            Food shop
+          </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><a href="!#">Profile</a></li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contacts">Contacts</Link>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
 export default Header;
